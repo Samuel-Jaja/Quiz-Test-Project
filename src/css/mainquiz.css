@@ -15,12 +15,14 @@
 .ques {
     margin-top: -20rem;
     text-align: center;
+    line-height: 3rem;
+    /* padding-top: -20rem; */
 }
 
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
-    width: 100%;
+    /* width: 100%; */
     font-size: 1.8rem;
     border: 0.1rem solid rgb(86, 165, 235, 0.25);
     background-color: white;
@@ -180,9 +182,6 @@
     background-color: #dc3545;
 }
 
-
-/* HUD */
-
 #hud {
     display: flex;
     justify-content: center;
@@ -208,4 +207,122 @@
     height: 2.4rem;
     background-color: var(--hover-color);
     width: 0%;
+}
+
+
+/* Tab */
+
+@media (max-width: 950px) {
+    #bic {
+        position: absolute;
+        top: -120px;
+        left: -210px;
+        transform: rotate(45deg);
+        z-index: +1;
+        display: none;
+    }
+    #orange {
+        position: absolute;
+        top: -100px;
+        right: -70px;
+        transform: rotate(45deg);
+        z-index: -1;
+        width: 12rem;
+        height: 12rem;
+        display: none;
+    }
+    #banana {
+        position: absolute;
+        top: -20px;
+        right: -250px;
+        transform: rotate(320deg);
+        z-index: +1;
+        display: none;
+    }
+    #sneakers {
+        position: absolute;
+        top: 70px;
+        left: -320px;
+        transform: rotate(45deg);
+        z-index: +1;
+        display: none;
+    }
+    #greensneakers {
+        position: absolute;
+        top: 220px;
+        left: -190px;
+        display: none;
+    }
+    #bic2 {
+        position: absolute;
+        top: 150px;
+        right: -100px;
+        transform: rotate(30deg);
+        z-index: -1;
+        display: none;
+    }
+    .ques {
+        text-align: center;
+        line-height: 3rem;
+        padding-top: 10rem;
+    }
+}
+
+
+/* Phone */
+
+@media (max-width: 300px) {
+    #bic {
+        position: absolute;
+        top: -120px;
+        left: -210px;
+        transform: rotate(45deg);
+        z-index: +1;
+        display: none;
+    }
+    #orange {
+        position: absolute;
+        top: -100px;
+        right: -70px;
+        transform: rotate(45deg);
+        z-index: -1;
+        width: 12rem;
+        height: 12rem;
+        display: none;
+    }
+    #banana {
+        position: absolute;
+        top: -20px;
+        right: -250px;
+        transform: rotate(320deg);
+        z-index: +1;
+        display: none;
+    }
+    #sneakers {
+        position: absolute;
+        top: 70px;
+        left: -320px;
+        transform: rotate(45deg);
+        z-index: +1;
+        display: none;
+    }
+    #greensneakers {
+        position: absolute;
+        top: 220px;
+        left: -190px;
+        display: none;
+    }
+    #bic2 {
+        position: absolute;
+        top: 150px;
+        right: -100px;
+        transform: rotate(30deg);
+        z-index: -1;
+        display: none;
+    }
+    .ques {
+        text-align: center;
+        line-height: 3rem;
+        padding-top: 10rem;
+    }
 }

@@ -57,18 +57,19 @@ h3 {
     font-weight: 500;
 }
 
-
-/* UTILITIES */
-
 .container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 55rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+}
+
+#max-width {
+    max-width: 100%;
 }
 
 .container>* {
@@ -96,9 +97,6 @@ h3 {
 .hidden {
     display: none;
 }
-
-
-/* BUTTONS */
 
 .btn {
     font-size: 1.8rem;
@@ -151,9 +149,6 @@ h3 {
     box-shadow: none;
     transform: none;
 }
-
-
-/* FORMS */
 
 form {
     width: 100%;

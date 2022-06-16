@@ -8,12 +8,12 @@ function UserAuth() {
     let password = document.getElementById("password").value;
 
     let user = localStorage.setItem("username", username);
-    let pass = localStorage.setItem("username", password);
-    let em = localStorage.setItem("username", email);
+    let pass = localStorage.setItem("password", password);
+    let em = localStorage.setItem("email", email);
 
-    // user = localStorage.getItem("username", username);
-    // pass = localStorage.getItem("username", password);
-    // em = localStorage.getItem("username", email);
+    user = localStorage.getItem("username", username);
+    pass = localStorage.getItem("username", password);
+    em = localStorage.getItem("username", email);
 
     // let a, b, c;
 
