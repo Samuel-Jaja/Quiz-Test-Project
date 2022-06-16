@@ -28,3 +28,9 @@ saveHighScore = (e) => {
     localStorage.setItem("highScores", JSON.stringify(highScores));
     // window.location.assign("/");
 };
+
+const playerScore = document.getElementById("playerScore");
+const currentplayer = JSON.parse(localStorage.getItem("allUsers"));
+playerScore.innerText = currentplayer[0].usern;
+const playerscorenotify = playerScore.innerText;
+playerScore.innerText = `Hey ${playerscorenotify}, you Scored `;
