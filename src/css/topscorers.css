@@ -1,3 +1,12 @@
+:root {
+    background-color: #cff7f1;
+    --hover-color: #47d4d3;
+    --light-color: #cff7f1;
+    --text-color: #000;
+    --grey-color: #f2f2f2;
+    font-size: 62.5%;
+}
+
 #highScoresList {
     list-style: none;
     padding-left: 0;
@@ -6,10 +15,18 @@
 
 .high-score {
     font-size: 4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-weight: bold;
+    border: 0.5rem solid var(--hover-color);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .high-score:hover {
     transform: scale(1.1);
+}
+
+#finalScore {
+    text-decoration: underline;
 }
