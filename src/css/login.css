@@ -249,6 +249,10 @@ input {
     left: 0;
 }
 
+.paragraph {
+    font-size: 6rem;
+}
+
 .signin-signup {
     position: absolute;
     top: 50%;
@@ -435,7 +439,7 @@ form.sign-in-form {
 }
 
 .panel p {
-    font-size: 0.95rem;
+    font-size: 2.95rem;
     padding: 0.7rem 0;
 }
 
@@ -540,7 +544,7 @@ form.sign-in-form {
         font-size: 1.2rem;
     }
     .panel p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         padding: 0.5rem 0;
     }
     .btn.transparent {
