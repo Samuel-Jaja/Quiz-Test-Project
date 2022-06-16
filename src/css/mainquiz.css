@@ -98,7 +98,7 @@
 #bic {
     position: absolute;
     top: -120px;
-    left: -210px;
+    left: -310px;
     transform: rotate(45deg);
     z-index: +1;
 }
@@ -111,7 +111,7 @@
 
 #orange {
     position: absolute;
-    top: -100px;
+    top: -90px;
     right: -70px;
     transform: rotate(45deg);
     z-index: -1;
@@ -122,7 +122,7 @@
 #banana {
     position: absolute;
     top: -20px;
-    right: -250px;
+    right: -300px;
     transform: rotate(320deg);
     z-index: +1;
 }
@@ -190,6 +190,7 @@
 .hud-prefix {
     text-align: center;
     font-size: 2rem;
+    padding-bottom: 2.5rem;
 }
 
 .hud-main-text {
@@ -199,12 +200,12 @@
 
 #progressBar {
     width: 100%;
-    height: 2.5rem;
+    height: 2rem;
     border: 0.1rem solid var(--grey-color);
 }
 
 #progressBarFull {
-    height: 2.4rem;
+    height: 1.9rem;
     background-color: var(--hover-color);
     width: 0%;
 }

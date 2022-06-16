@@ -17,14 +17,17 @@
                     <h2 class="title">Sign In</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" id="username" />
+                        <input type="text" placeholder="Username" id="uname" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" id="password" />
+                        <input type="password" placeholder="Password" id="psw" />
                     </div>
+                    <button type="submit" id="loginBtn" onclick="Login(event)" disabled class="btn solid" value="Login">
+              Login
+            </button>
 
-                    <input type="submit" value="Login" class="btn solid" />
+                    <!-- <input type="submit" value="Login" class="btn solid" /> -->
                     <p class="social-text">Or Sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -79,7 +82,7 @@
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h3>New here ?</h3>
+                    <h1>New here ?</h1>
                     <p>Sign up lets Play...</p>
                     <button class="btn transparent" id="sign-up-btn">Sign Up</button>
                 </div>
@@ -87,7 +90,7 @@
             </div>
             <div class="panel right-panel">
                 <div class="content">
-                    <h3>One of us ?</h3>
+                    <h1>One of us ?</h1>
                     <p>Quick Quiz</p>
                     <button class="btn transparent" id="sign-in-btn">Sign In</button>
                 </div>

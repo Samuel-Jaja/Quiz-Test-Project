@@ -20,6 +20,7 @@ saveHighScore = (e) => {
         score: mostRecentScore,
         name: username.value,
     };
+    // alert("Saved & Confirmed");
     highScores.push(score);
     highScores.sort((a, b) => b.score - a.score);
     highScores.splice(3);
