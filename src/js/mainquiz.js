@@ -7,6 +7,9 @@ const scoreText = document.getElementById("score");
 const progressText = document.getElementById("progressText");
 const progressBarFull = document.getElementById("progressBarFull");
 
+const loader = document.getElementById("loader");
+const game = document.getElementById("game");
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -49,25 +52,27 @@ fetch(
     });
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 13;
+const totalQuestions = 13;
 
 startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuesions = [...questions];
     getNewQuestion();
+    game.classList.remove("hidden");
+    loader.classList.add("hidden");
 };
 
 getNewQuestion = () => {
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (availableQuesions.length === 0 || questionCounter >= totalQuestions) {
         localStorage.setItem("mostRecentScore", score);
         //go to the grading page
         return window.location.assign("/src/views/scorecentre.html");
     }
     questionCounter++;
-    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${questionCounter}/${totalQuestions}`;
     //Update the progress bar
-    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+    progressBarFull.style.width = `${(questionCounter / totalQuestions) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
