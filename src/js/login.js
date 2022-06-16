@@ -2,18 +2,54 @@ const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".container");
 
-function UserAuth() {
-    let username = document.getElementById("username").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+sign_up_btn.addEventListener("click", () => {
+    container.classList.add("sign-up-mode");
+});
 
-    let user = localStorage.setItem("username", username);
-    let pass = localStorage.setItem("password", password);
-    let em = localStorage.setItem("email", email);
+sign_in_btn.addEventListener("click", () => {
+    container.classList.remove("sign-up-mode");
+});
 
-    user = localStorage.getItem("username", username);
-    pass = localStorage.getItem("username", password);
-    em = localStorage.getItem("username", email);
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+
+document.getElementById("add").addEventListener("click", function() {
+    window,
+    this.localStorage.setItem("name", "Samuel Jaja");
+});
+
+// UserAuth() {
+
+//     }
+// localStorage.setItem("user", JSON.stringify([]));
+// localStorage.setItem("usernam", username);
+// localStorage.setItem("passwor", password);
+
+let un = username;
+console.log(un);
+
+const person = {
+    name: username,
+    location: password,
+};
+
+window.localStorage.setItem("user", JSON.stringify(person));
+// let user = localStorage.setItem("username", username);
+// let pass = localStorage.setItem("password", password);
+
+UserAuth = () => {
+    // const user = {
+    //     username: username.value,
+    //     password: password.value,
+    // };
+
+    currentUser.push(user);
+
+    localStorage.setItem("currentUser", JSON.stringify(currentUser));
+
+    // user = localStorage.getItem("username", username);
+    // pass = localStorage.getItem("username", password);
+    // em = localStorage.getItem("username", email);
 
     // let a, b, c;
 
@@ -26,22 +62,14 @@ function UserAuth() {
     // } else {
     //     alert("Invalid details !");
     // }
-}
 
-// let user = {
-//     username: username,
-//     email: email,
-//     password: password,
-// };
+    // let user = {
+    //     username: username,
+    //     email: email,
+    //     password: password,
+    // };
 
-// let json = JSON.stringify(user);
-// localStorage.setItem(user, json);
-// console.log("User Added");
-
-sign_up_btn.addEventListener("click", () => {
-    container.classList.add("sign-up-mode");
-});
-
-sign_in_btn.addEventListener("click", () => {
-    container.classList.remove("sign-up-mode");
-});
+    // let json = JSON.stringify(user);
+    // localStorage.setItem(user, json);
+    // console.log("User Added");
+};

@@ -36,7 +36,7 @@ h4 {
 
 h1 {
     font-size: 5.4rem;
-    color: #56a5eb;
+    color: var(--text-color);
     margin-bottom: 5rem;
 }
 
@@ -106,8 +106,10 @@ h3 {
     border: 0.1rem solid #56a5eb;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56a5eb;
-    background-color: white;
+    color: var(--text-color);
+    background-color: var(--hover-color);
+    font-weight: bold;
+    border-radius: 0.45rem;
 }
 
 
@@ -159,7 +161,7 @@ form {
 
 input {
     margin-bottom: 1rem;
-    width: 20rem;
+    width: 30rem;
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
@@ -169,4 +171,34 @@ input {
 input::placeholder {
     color: #aaa;
     text-align: center;
+}
+
+@media (max-width: 300px) {
+    #max-width {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 4.2rem;
+        color: var(--text-color);
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 950px) {
+    #max-width {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 4.2rem;
+        color: var(--text-color);
+        margin-bottom: 5rem;
+    }
 }
